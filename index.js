@@ -11,7 +11,7 @@ rl.question('Type a number: ', (answer) => {
     if (answer.match(1)) {
         const fs = require('fs');
 
-        fs.readFile(__dirname + 'package.json', 'utf-8', (err, content) => {
+        fs.readFile(__dirname + '/package.json', 'utf-8', (err, content) => {
             console.log(content);
         })
     } else if (answer.match(2)) {
